@@ -2,6 +2,8 @@
 
 ### OVERVIEW
 This project is a simple console-based application that helps manage basic banking operations. It uses Python for handling the application logic and MySQL as the backend database for storing customer and account details. The system allows users to create accounts, view account details, deposit and withdraw money, check balances, and manage transaction records. It provides a structured and secure way to organize banking data and demonstrates the integration of Python with MySQL for real-world database operations.
+<img width="1900" height="767" alt="output" src="https://github.com/user-attachments/assets/cd33dbbc-b15e-4fbd-b567-2ad83d99cd84" />
+<img width="1902" height="687" alt="output_contn" src="https://github.com/user-attachments/assets/21e45fe9-91a4-4b73-bfc9-e9cbdf6190ff" />
 
 ### TOOL REQUIREMENT
 

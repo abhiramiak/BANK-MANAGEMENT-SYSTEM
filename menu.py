@@ -1,6 +1,7 @@
 from account_operations import *
 
 def menu():
+    bank = BankOperations() 
     while True:
         print("\n Bank Management System")
         print("1. CREATE ACCOUNT")
@@ -13,20 +14,21 @@ def menu():
         choice=input("enter your choice")
         
         if choice=="1":
-            create_account()
+            bank.create_account()
         elif choice=="2":
-            view_accounts()
+            bank.view_accounts()
         elif choice=="3":
-            deposit_money()
+            bank.deposit_money()
         elif choice=="4":
-            withdraw_money()
+            bank.withdraw_money()
         elif choice=="5":
-            check_balance()
+            bank.check_balance()
         elif choice=="6":
             print("exiting system")
             break
         else:
             print("invalid choice")
+
 
 
 

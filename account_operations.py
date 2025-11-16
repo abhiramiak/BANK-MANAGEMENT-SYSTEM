@@ -1,6 +1,7 @@
 from db_config import connect
 
-def create_account():
+class BankOperations:
+   def create_account(self):
     name=input("enter ur name=")
     email=input("enter ur email=")
     balance=float(input("enter ur opening balance="))
@@ -13,7 +14,7 @@ def create_account():
     print("account created successfully")
     db.close()
 
-def view_accounts():
+   def view_accounts(self):
     db=connect()
     cursor=db.cursor()
     cursor.execute("select * from accounts")
@@ -23,7 +24,7 @@ def view_accounts():
         print(f"ID : {acc[0]}, Name: {acc[1]}, Email : {acc[2]} , Balance: {acc[3]}")
     db. close()
 
-def deposit_money():
+   def deposit_money(self):
     acc_id=int(input("enter account id"))
     amount=float(input("enter deposit amount"))
     db=connect()
@@ -33,7 +34,7 @@ def deposit_money():
     print("money is deposited")
     db.close()
 
-def withdraw_money():
+   def withdraw_money(self):
     acc_id=int(input("enter account id"))
     amount=float(input("enter the withdraw amount"))
     db=connect()
@@ -49,7 +50,7 @@ def withdraw_money():
 
     db.close()
 
-def check_balance():
+      def check_balance(self):
         acc_id=int(input("enter account id"))
         db=connect()
         cursor=db.cursor()
@@ -90,3 +91,4 @@ def check_balance():
     
     
    
+
